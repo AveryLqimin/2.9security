@@ -18,3 +18,9 @@ variable "public_subnet_ids" {
   description = "Public subnet ids"
   type        = list(string)
 }
+
+variable "ami_id" {
+  description = "Optional AMI ID to use for the EC2 instance. If unset, the module will select a recent Amazon Linux 2 AMI."
+  type        = string
+  default     = ""
+}
